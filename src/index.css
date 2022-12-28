@@ -1,13 +1,228 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@-ms-viewport{
+
+  width: device-width; 
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+
+  margin: 0;
+  min-width: 100vh;
+  background-color: rgb(224, 224, 224);
+
 }
+
+*{
+
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Navbar */
+nav{
+  margin: 2%;
+  border-radius: 35px;
+
+}
+
+
+nav.navbar a.navbar-brand{
+  
+  font-size: 25px;
+  color:rgb(44, 43, 43);
+  font-weight: 600;
+  text-shadow: 0px 0px 2px rgb(0, 0, 0);
+  opacity: 0.9;
+  padding: 0 20px;
+  height: 64px;
+}
+
+li.nav-item{
+  
+  font-size: 16px;
+  font-weight: 600;
+  /* border: 1px black solid;
+  border-radius: 35px; */
+  transition: 0.13s ease-in-out;
+
+ }
+ 
+ /* landing page */
+
+.first{
+
+margin: auto;
+max-width: 100%;
+background-image: url(/src/Images/minimalist.png);
+background-position: center;
+background-repeat: no-repeat;
+position: relative;
+background-size:cover;
+/* border: 1px solid black; */
+padding: 280px 0;
+
+ }
+
+ figure{
+  padding-left: 15%;
+  /* border: 1px solid black; */
+
+ }
+
+ h2{
+
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  opacity: 0.6;
+
+}
+
+figcaption.blockquote-footer{
+
+  color: azure;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+/* batas */
+.card{
+
+  margin-bottom: 20px;
+}
+h6{
+
+  color: rgb(75, 74, 74);
+  font-weight: 600;
+  /* border: 1px solid black; */
+  padding-top: 0;
+  width: auto;
+  text-align: center;
+
+}
+
+div.card-title{
+
+/* 
+border: 1px solid black; */
+text-align: center;
+font-weight: 700;
+margin: 0;
+font-size: 40px;
+}
+
+/* About */
+.about{
+
+/* border: 1px solid black; */
+height: auto;
+
+
+}
+
+.aboutMe{
+
+  padding-top: 50px;
+
+}
+
+h3.judul{
+
+font-weight: 900;
+
+}
+
+P{
+
+  color: rgb(78, 78, 78);
+  padding-top: 20px;
+  font-weight: 900;
+  font-size: 16px;
+  text-align: justify;
+
+  
+  }
+
+.myFoto{
+
+  /* border: 1px solid black; */
+  margin: auto;
+
+}
+
+
+
+/* Project */
+
+.logo{
+
+  width: 120px;
+
+
+}
+
+img{
+
+  /* border: 1px solid red; */
+  max-width: auto;
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+/* .card-body{
+
+
+border: 1px solid black;
+
+} */
+
+.project{
+
+    border-radius: 16px;
+    margin: auto;
+    width: 80%;
+    max-width: 100%;
+    min-height: auto;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+      0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+      0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    background-position: center;
+    background-size: auto;
+    background-size: cover;
+    /* border: 1px solid black ; */
+    
+}
+
+
+.col-md-2{
+
+  /* border: 1px solid black; */
+  /* border-right: 1px solid rgb(206, 206, 206); */
+  width:fit-content;
+  min-width: 80px;
+  
+  
+  
+}
+
+p{
+
+font-weight: 400;
+
+}
+
+.card-text{
+
+/* border: 1px solid black; */
+width: 100%;
+color: black;
+font-size: 14px;
+text-align: justify;
+
+}
+
