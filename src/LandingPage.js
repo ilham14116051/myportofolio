@@ -2,50 +2,81 @@ import { MDBTypography } from 'mdb-react-ui-kit';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BatasCard from './Components/BatasCard';
 import Project from './Components/Project/ProjectExp';
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Footer from './Components/Footer/Footer';
+
 
 function LandingPage() {
     return (
 
         <>
-            <div className='first container-fluid'>
-                <figure className='mb-0'>
-                    <MDBTypography blockquote>
-                        <h2>Hello, I'am Ilham S.Kom</h2>
-                    </MDBTypography>
-                    <figcaption className='blockquote-footer mb-0'>
-                        Web Development Enthusiast
-                    </figcaption>
-                </figure>
+            <div className='homebody container-fluid'>
+                <div className="row">
+                    <div className='hometext col-4'>
+                        <figure className='mb-0'>
+                            <MDBTypography blockquote>
+                                <h2>Hello, I'am Ilham S.Kom</h2>
+                            </MDBTypography>
+                            <figcaption className='blockquote-footer mb-0'>
+                                Web Development Enthusiast
+                            </figcaption>
+                            <button className='btn btn-success'>chat me</button>
+                        </figure>
+
+                    </div>
+                    <div className='homebg col-8'></div>
+                </div>
+
             </div>
-            <Card border="primary">
+            <Card>
                 <Card.Body>
-                    <Card.Title>Tentang Saya</Card.Title>
+                    <Card.Title>Summary Objective</Card.Title>
+                    <h6> Short summary about me, interests and skills. </h6>
                 </Card.Body>
             </Card>
-
             <div className='about'>
                 <Container>
                     <Row>
                         <Col xs="4"><img src="Images/aku.jpeg" className='bg-primary myFoto img-fluid' /></Col>
                         <Col className='aboutMe'>
                             <h3 className='judul'>About Me</h3>
-                            <p>I am a bachelor’s degree in Informatics Engineering from the Sumatera Institute of Technology. I have an
-                                interest in Web development, front-end development, web design, computer network and UI / UX. I am
-                                curious about new things, constantly learning, have big motivation to be a better person, and want to
-                                grow. I am very familiar with a team or individual work. I have skills in the use of the Laravel framework,
-                                know the use of PHP, CSS, MySQL, Mikrotik and Figma
-
-
-
+                            
+                            <p>
+                                I graduated with a bachelor's degree in Informatics Engineering from the Sumatra Institute of Technology. 
+                                I have interest in Web development, front-end development, database queries, computer networking and UI/UX. 
+                                I have experience in developing web-based information systems using the Laravel framework and 
+                                I'm currently actively looking for work that is relevant to my interests and education. 
+                                to support my interest, I have curiosity about new things, keep learning to broaden my knowledge in technology 
+                                and have great motivation to be a better person and want to develop. I am very familiar with team or individual work.
                             </p>
+                            <h4 className='judul'> Skill </h4>
+                            <div className='skill'>
+                            <ul>
+                                <li>Html</li>
+                                <li>CSS</li>
+                                <li>JavaScript ( Basic )</li>
+                                <li>React JS ( Basic )</li>
+                                <li>Framework Laravel</li>
+                                <li>C++</li>
+                                
+                            </ul>
+                            <ul>
+                                <li>MySql</li>
+                                <li>Query and Sub-Query Database</li>
+                                <li>Tailwind</li>
+                                <li>Bootstrap</li>
+                                <li>Figma</li>
+                                <li>Canva</li>
+                            </ul>
+                            <ul><button type='button' className='btn btn-primary' >See full my profile</button></ul>
+                            
+                            </div>
 
                         </Col>
-
+                        
                     </Row>
                 </Container>
 
@@ -55,16 +86,24 @@ function LandingPage() {
 
             <Project></Project>
 
-            <Button className='col-md-12' variant="info" size="lg" text-center>Lihat Detail dan Project Lain</Button>
+            <div className='d-grid gap-2 col-4 mx-auto'>
 
-            <Card border="primary">
+                <button type="button" className="btn btn-info">See All Project and Detail</button>
+
+            </div>
+
+            <Card>
                 <Card.Body>
-                    <Card.Title>Kontak</Card.Title>
-                    <h6> Informasi Kontak yang dapat di Hubungi</h6>
+                    <Card.Title>Information</Card.Title>
+                    <h6> Informasi lain saya</h6>
                 </Card.Body>
             </Card>
+
+            <Footer></Footer>
         </>
     );
 }
+
+
 
 export default LandingPage;

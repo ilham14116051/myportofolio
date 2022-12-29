@@ -1,16 +1,16 @@
 
 import React, { useState } from 'react';
 import {
-    MDBContainer,
-    MDBNavbar,
-    MDBNavbarBrand,
-    MDBNavbarToggler,
-    MDBIcon,
-    MDBNavbarNav,
-    MDBNavbarItem,
-    MDBNavbarLink,
-    MDBCollapse,
-  
+  MDBContainer,
+  MDBNavbar,
+  MDBNavbarBrand,
+  MDBNavbarToggler,
+  MDBIcon,
+  MDBNavbarNav,
+  MDBNavbarItem,
+  MDBNavbarLink,
+  MDBCollapse,
+
 } from 'mdb-react-ui-kit';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -23,7 +23,7 @@ function NavBar() {
   return (
     <MDBNavbar fixed='top' expand='lg' light bgColor='light'>
       <MDBContainer fluid>
-        <MDBNavbarBrand hreAf='#'>MyPortofolio</MDBNavbarBrand>
+        <MDBNavbarBrand href='#'>MyPortofolio</MDBNavbarBrand>
 
         <MDBNavbarToggler
           aria-controls='navbarSupportedContent'
@@ -37,16 +37,12 @@ function NavBar() {
         <MDBCollapse navbar show={showBasic}>
           <MDBNavbarNav className='ml-auto mb-2 mb-lg-0'>
 
+           
             <MDBNavbarItem>
-              <MDBNavbarLink active aria-current='page' href='#'>
-                
-              </MDBNavbarLink>
+              <MDBNavbarLink href='#'>Home</MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href='#'>Tentang Saya</MDBNavbarLink>
-            </MDBNavbarItem>
-            <MDBNavbarItem>
-              <MDBNavbarLink href='#'>Kontak</MDBNavbarLink>
+              <MDBNavbarLink href='#'>AboutMe</MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
               <MDBNavbarLink href='#'>Project</MDBNavbarLink>
