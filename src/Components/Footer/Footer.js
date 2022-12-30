@@ -21,7 +21,7 @@ function Footer() {
                             </p>
                         </div>
                         <div className="col-lg-3 col-xs-12 links">
-                            <h4 className="mt-lg-0 mt-sm-3">Links</h4>
+                            <h4 className="mt-lg-0 mt-sm-3">Point</h4>
                             <ul className="m-0 p-0">
                                 <li>- <a href="#">Home</a></li>
                                 <li>- <a href="#">AboutMe</a></li>
@@ -31,8 +31,8 @@ function Footer() {
                         <div className="col-lg-4 col-xs-12 location">
                             <h4 className="mt-lg-0 mt-sm-4">My Address</h4>
                             <p>Jl. Siliwangi No. 69, Mulyo Asri, Tulang Bawang Tengah, Tulang Bawang Barat, Lampung</p>
-                            <p className="mb-0"><a href="#"><FontAwesomeIcon icon={faPhoneSquareAlt} size="xl"/></a> +6282271056498</p>
-                            <p><FontAwesomeIcon icon={faMailBulk} size="xl"/> ilhm2912@gmail.com</p>
+                            <p className="mb-0"><a href="tel:+6282271056498"><FontAwesomeIcon icon={faPhoneSquareAlt} size="xl"/> +6282271056498</a></p>
+                            <p><a href='mailto:ilhm2912@gmail.com'><FontAwesomeIcon icon={faMailBulk} size="xl"/> ilhm2912@gmail.com</a></p>
                         </div>
                     </div>
                     <div className="row mt-5">

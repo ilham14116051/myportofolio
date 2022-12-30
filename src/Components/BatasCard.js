@@ -6,7 +6,7 @@ export default function BatasCard() {
     <Card border="primary">
         <Card.Body>
           <Card.Title>Project</Card.Title>
-          <h6> Beberapa Project yang pernah dikerjakan</h6>
+          <h6> Short summary of projects that have been carried out and work tools used.</h6>
            
           
         </Card.Body>
